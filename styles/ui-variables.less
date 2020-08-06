@@ -1,0 +1,95 @@
+
+// UI Variables
+// -------------------
+
+// These are the official UI variables that every UI theme should define.
+// It allows other packages to match your theme.
+
+// Overrides: atom/static/variables/ui-variables.less
+
+// Try to edit some of the values below to see your theme change.
+// A good start is to change the color of the `@base-background-color` variable.
+
+
+// Text Colors
+@text-color:           hsl(200.5, 95%, 93%);
+@text-color-subtle:   hsl(205.9, 75.9%, 34.1%);
+@text-color-highlight: darken(hsl(248.6, 61.9%, 53.7%), 25%);
+@text-color-selected:  lighten(hsl(227, 100%, 68.8%),52%);
+
+
+@text-color-info:    lighten(hsl(285.2, 57.8%, 54.5%),20%);
+@text-color-success: hsl(142, 85.7%, 50%);
+@text-color-warning: hsl(37, 97.6%, 51.7%);
+@text-color-error:   hsl(4.1, 97.6%, 51.7%);
+
+// Background colors
+@background-color-info:    hsl(208, 100%, 50%);
+@background-color-success: hsl(160,  70%, 36%);
+@background-color-warning: hsl(32,   60%, 50%);
+@background-color-error:   hsl(0,    70%, 50%);
+
+@background-color-highlight: darken(hsl(285.4, 96.4%, 78.2%),5%);
+@background-color-selected:  lighten(@base-background-color, 25%);
+@app-background-color:       darken(@base-background-color, 16%);
+
+// Base colors
+@base-background-color: darken(hsl(234.6, 96%, 29.4%),27%);
+@base-border-color:     darken(@text-color-success, 40%);
+
+// Component colors
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color:     @base-border-color;
+
+@input-background-color: @app-background-color;
+@input-border-color:     @base-border-color;
+
+@tool-panel-background-color: @base-background-color;
+@tool-panel-border-color:     @base-border-color;
+
+@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-border-color:     @base-border-color;
+
+@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-border-color:     @base-border-color;
+
+@overlay-background-color: lighten(@base-background-color, 5%);
+@overlay-border-color:     @base-border-color;
+
+@button-background-color:          darken(@base-background-color, 5%);
+@button-background-color-hover:    lighten(@base-background-color, 12%);
+@button-background-color-selected: @button-background-color-hover;
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:    @app-background-color;
+@tab-bar-border-color:        @base-border-color;
+@tab-background-color:        @tab-bar-background-color;
+@tab-background-color-active: lighten(@base-background-color, 5%);
+@tab-border-color:            @base-border-color;
+
+@tree-view-background-color: @base-background-color;
+@tree-view-border-color:     @base-border-color;
+
+// Site colors
+@ui-site-color-1: hsl(192.3, 100%, 17.3%); // blue
+@ui-site-color-2: hsl(220, 100%, 25.9%) // green
+@ui-site-color-3: hsl(26.9, 57.8%, 54.5%); // orange
+@ui-site-color-4: hsl(285.2, 57.8%, 54.5%);             // pink
+@ui-site-color-5: hsl(69, 57.8%, 54.5%);             // yellow
+
+// Sizes
+@font-size: 12px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 12px;
+@component-icon-padding: 5px;
+@component-icon-size: 14px;
+@component-line-height: 25px;
+
+@tab-height: 40px;
+
+// Misc
+@component-border-radius: 5px;
+@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
